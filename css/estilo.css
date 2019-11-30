@@ -1,0 +1,99 @@
+body{
+  background-image: url("../img/bg2.jpg");
+  background-size: cover;
+  text-shadow: 1px 1px 3px black;
+  color:white;
+}
+
+
+
+
+
+.campo-digitacao{
+  font-size: 20px;
+  height: 130px;
+  background-color: white;
+  color: black;
+  opacity: 0.8;
+  resize: none;
+  transition: background-position 5000ms ease-in-out;
+  background-image: url('../#.gif');
+  background-repeat: no-repeat;
+  background-size: contain;
+
+}
+
+
+.frase{
+  font-size: 15px;
+}
+
+.campo-desativado{
+  background-color: lightgray;
+
+}
+
+
+.icones{
+  vertical-align: middle;
+}
+
+.inativo{
+   pointer-events: none;
+   cursor: default;
+}
+
+.ativo{
+   pointer-events:
+   cursor:  auto;
+}
+
+#titulo{
+  font-size: 50px;
+  text-transform: uppercase;
+  animation-duration: 1s;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+}
+
+table{
+  border-radius: 10px 10px 0px 0px;
+  background-color: rgba(0,0,0,0.3);
+}
+
+table th{
+  background-color: rgba(0,0,0,0.3);
+}
+
+.borda-verde{
+  border: 3px solid green;
+}
+
+.borda-vermelha{
+  border: 3px solid red;
+}
+
+.fadeOut{
+  opacity: 0;
+  transition: 0.5;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

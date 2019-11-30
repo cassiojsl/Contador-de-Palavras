@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Conta Palavras</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/libs/materialize.min.css">
+	<link rel="stylesheet" href="css/estilo.css">
+	<link rel="stylesheet" href="css/libs/google-fonts.css">
+	<link rel="stylesheet" href="css/animate.css">
+</head>
+<body>
+	<div class="container center">
+		<h1 class="rubberBand slow" id="titulo">Conta Palavras</h1>
+		<h5>Digite o texto abaixo no menor tempo possível!</h5>
+		<br>
+		<p class="frase center">jQuery é uma biblioteca de funções em JavaScript que interage com o HTML, desenvolvida para simplificar os scripts
+			interpretados no navegador do usuário (client-side). Criada em dezembro de 2006 no BarCamp de Nova York por John Resig. Usada por
+			cerca de 77% dos 10 mil sites mais visitados do mundo, jQuery é a mais popular das bibliotecas JavaScript.</p>
+			<ul class="informacoes">
+				<li><i class="small material-icons icones">description</i><span id="palavras">0</span> palavras</li>
+				<li id="segundos"><i class="small material-icons icones">access_time</i><span id="tempo">10</span> segundos</li>
+			</ul>
+			<textarea class="campo-digitacao" rows="8" cols="40"></textarea>
+			<ul>
+				<li><span id="conta-caracter"> 0 </span> caracteres</li>
+				<li><span id="conta-palavras"> 0 </span> palavras</li>
+			</ul>
+			<div class="botoes">
+				<!-- <button id="restart" ></button> -->
+				<a id="restart" class="btn-floating btn-large waves-effect waves-light">
+					<i class="novo material-icons">restore</i>
+				</a>
+			</div>
+
+			<section class="placar">
+				<h3>Placar</h3>
+				<table class="centered bordered">
+					<thead>
+						<tr>
+							<th>Usuário</th>
+							<th>No. de Palavras</th>
+							<th>Remover</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Anônimo</td>
+							<td>99999</td>
+							<td><a href="#" title="Você não pode remover Mailto." target="_blank"><i class="small material-icons">dehaze</i></a></td>
+						</tr>
+
+
+					</tbody>
+				</table>
+			</section>
+
+
+
+			<audio class="audio" src="audio.mp3">
+			</audio>
+			<p><b>Melhor Pontuação: </b><br><span id="placar">0</span> palavra(s).</p>
+		</div>
+
+		<script src="js/jquery.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/placar.js"></script>
+
+	</script>
+</body>
+</html>
